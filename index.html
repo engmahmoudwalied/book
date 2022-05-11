@@ -37,12 +37,12 @@
 </header>
 <main>
     <!--    Search Section -->
-    <section id="search_section">
-        <div class="layer"></div>
+        <section id="search_section">
+            <div class="layer"></div>
         <div id="search_content">
-            <h1 class="search_label">مكتبــــتي</h1>
-            <form action="">
-                <input class="search_input" type="text" placeholder="إبحث عن اي كتاب ...">
+            <h1 class="search_label" id="search_label">مكتبــــتي</h1>
+            <form action="#">
+                <input class="search_input" id="search_input" type="text" placeholder="إبحث عن اي كتاب ...">
                 <input type="submit" onclick="search()" id="search_icon" class="search_icon" value="إبحث">
             </form>
         </div>
@@ -232,7 +232,10 @@
 
 <script>
     function search() {
-      alert('جار البحث ... من فضلك انتظر')
+        var label = document.getElementById('search_label');
+        var input = document.getElementById('search_input');
+
+        label.innerHTML = 'جار البحث عن  '+'<span style="color: red;background: yellow"> '+input.value +' </span> '+ 'من فضلك انتظر';
     }
 </script>
 </body>

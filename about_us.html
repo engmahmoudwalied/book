@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -13,8 +13,29 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+        .single_book_img{
+            width: 20%;
+        }
+        .single_book_content{
+            width: 49%;
+            padding: 10px;
+        }
+        .single_book_info{
+            width: 30%;
+        }
+        #single_book{
+            display: flex;
+        }
+        .single_book_img > figure > img{
+            border-radius: 5px;
+        }
+        .my_table > tbody > tr > td {
+            border: 1px solid #6d6d6d;
+        }
+    </style>
 </head>
-<body dir="itr">
+<body dir="rtl">
 <header>
     <table class="table header_table">
         <tr>
@@ -33,22 +54,82 @@
             </td>
         </tr>
     </table>
-    <h1> عن المؤلف</h1>
-    <img src="img/mahmoud2.jpg" width="300" height="270" alt="Mahmoud"><br>
-    <h3>Mahmoud walied </h3>
-    <h4>Personal Information</h4>
-    <p> .My name is Mahmoud I am 20 years old</p>
-    <p>.I’m from Egypt</p>
-    <p>.I have Three brothers</p>
-    <h3>Education</h3>
-    <p>	I am student at Helwan university,
-        faculty of computer science ,computer science department</p>
+    <!--    <nav>-->
+    <!--        <ul>-->
+    <!--            &lt;!&ndash;   المفروض هنا في لينك موقع &ndash;&gt;-->
+    <!--            <li id="homex"><a href="index.html" style="color: red;font-size: larger;">الرئيسيه</a></li>-->
+    <!--            <li><a href="books.html">كل الكتب</a></li>-->
+    <!--            <li><a href="pages/category.html">أقسام الكتب</a></li>-->
+    <!--            <li><a href="about_us.html"> من نحن </a></li>-->
+    <!--        </ul>-->
+    <!--    </nav>-->
+</header>
+<main>
+    <section>
+        <h1>محمود وليد محمود</h1>
+    </section>
+    <section id="single_book">
+        <div class="single_book_img">
+            <figure>
+                <img class="book_img" src="img/mahmoud2.jpg" alt="">
+            </figure>
+        </div>
+        <div class="single_book_content">
+            <h2>السيره الذاتيه للمؤلف</h2>
+            <p style="text-align: justify-all">
+                انا اسمي محمود وليد محمود طالب بكليه الحاسبات والذكاء الاصطناعي جامعه حلوان , افضل جامعه في الدتيا
+                وبدرسلي افضل دكاتره ومعيدين , بدرس البرمجه وعلوم الحاسب
+            </p>
+            <h3>ليه عملنا الموقع دا</h3>
+            <p style="text-align: justify-all">
+                عملنا الموقع دا علشان نساعد الناس انها تقرأ الكتب وتشتريها بسهوله , القراءه شي مهم في حياتنا ولازم نستغل التكنولوجيا للتسهيل علي حياه الناس
 
-   متابعة اخر اخبار الموقع والقناة علي
-        <a href="https://www.facebook.com/abo.elsheikh.108"> الفيسبوك </a>
-
+            </p>
+        </div>
+        <div class="single_book_info">
+            <table class="table my_table">
+                <tr>
+                    <td>الاسم</td>
+                    <td>محمود وليد محمود</td>
+                </tr>
+                <tr>
+                    <td>السن</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>الفرقه</td>
+                    <td>الاولي</td>
+                </tr>
+                <tr>
+                    <td>الدراسه</td>
+                    <td>
+                        حاسبات وذكاء اصطناعي</td>
+                </tr>
+                <tr>
+                    <td>الجامعه</td>
+                    <td>حلوان</td>
+                </tr>
+                <tr>
+                    <td>اشراف</td>
+                    <td>م - اسلام </td>
+                </tr>
+                <tr>
+                    <td>الفيسبوك</td>
+                    <td>
+                        <a href="https://www.facebook.com/abo.elsheikh.108">facebook</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+<footer>
     <p>
-       <h1> Designed and developed by mahmoud walied © 2022</h1>
+        متابعة اخر اخبار الموقع والقناة علي
+        <a href="https://www.facebook.com/abo.elsheikh.108"> الفيسبوك </a>
+    </p>
+    <p>
+        Designed and developed by mahmoud walied © 2022
     </p>
 </footer>
 </body>
